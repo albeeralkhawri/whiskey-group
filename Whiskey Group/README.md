@@ -1,3 +1,0 @@
-# Whiskey-Group
-
-## In processing
