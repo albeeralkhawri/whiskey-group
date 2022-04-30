@@ -8,30 +8,8 @@
 	<meta name="description" content="pagePiling.js plugin by Alvaro Trigo." />
 	<meta name="keywords"  content="pile,piling,piling.js,stack,pages,scrolling,stacking,touch,fullpile,scroll,plugin,jquery" />
 	<meta name="Resource-type" content="Document" />
-
-	<link rel="stylesheet" type="text/css" href="CSS/jquery.pagepiling.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/jquery.pagepiling.css" />
 	<link rel="stylesheet" type="text/css" href="CSS/main.css" />
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-
-	<script type="text/javascript" src="JS/jquery.pagepiling.min.js"></script>
-	<script type="text/javascript">
-		var deleteLog = false;
-
-		$(document).ready(function() {
-	    	$('#pagepiling').pagepiling({
-	    		menu: '#menu',
-	    		anchors: ['page1', 'page2', 'page3'],
-	    		navigation: {
-		            'textColor': '#f2f2f2',
-		            'bulletsColor': '#ccc',
-		            'position': 'right',
-		            'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4']
-		        }
-			});
-	    });
-    </script>
-
     <style>
     /* Style for our header texts
 	* --------------------------------------- */
@@ -137,4 +115,24 @@
 	</div>
 
 </body>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="JS/jquery.pagepiling.min.js"></script>
+<script type="text/javascript">
+		var deleteLog = false;
+
+		$(document).ready(function() {
+	    	$('#pagepiling').pagepiling({
+	    		menu: '#menu',
+	    		anchors: ['page1', 'page2', 'page3'],
+	    		navigation: {
+		            'textColor': '#f2f2f2',
+		            'bulletsColor': '#ccc',
+		            'position': 'right',
+		            'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4']
+		        }
+			});
+	    });
+</script>
+
 </html>
