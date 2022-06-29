@@ -1,11 +1,3 @@
-/*!
- * pagepiling.js 1.5.6
- *
- * https://github.com/alvarotrigo/pagePiling.js
- * @license MIT licensed
- *
- * Copyright (C) 2016 alvarotrigo.com - A project by Alvaro Trigo
- */
 (function ($, document, window, undefined) {
     'use strict';
 
@@ -36,8 +28,8 @@
             loopTop: false,
             css3: true,
             navigation: {
-                textColor: '#000',
-                bulletsColor: '#000',
+                textColor: '#f17e19',
+                bulletsColor: '#f17e19',
                 position: 'right',
                 tooltips: []
             },
@@ -696,13 +688,11 @@
         * After this function is called, the mousewheel and trackpad movements will scroll through sections
         */
         function addMouseWheelHandler(){
-            if (container.length) {
-                if (container.get(0).addEventListener) {
-                    container.get(0).addEventListener('mousewheel', MouseWheelHandler, false); //IE9, Chrome, Safari, Oper
-                    container.get(0).addEventListener('wheel', MouseWheelHandler, false); //Firefox
-                } else {
-                    container.get(0).attachEvent('onmousewheel', MouseWheelHandler); //IE 6/7/8
-                }
+            if (container.get(0).addEventListener) {
+                container.get(0).addEventListener('mousewheel', MouseWheelHandler, false); //IE9, Chrome, Safari, Oper
+                container.get(0).addEventListener('wheel', MouseWheelHandler, false); //Firefox
+            } else {
+                container.get(0).attachEvent('onmousewheel', MouseWheelHandler); //IE 6/7/8
             }
         }
 
@@ -973,6 +963,5 @@
 
             return 'translate3d(0px, -100%, 0px)';
         }
-
     };
 })(jQuery, document, window);
