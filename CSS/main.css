@@ -19,7 +19,7 @@
 
 
 #welcome_section h1{
-    margin-bottom: 5%!important;
+    margin-bottom: 15%!important;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -27,6 +27,7 @@
     }
 .p1{
 	font-family: 'Pattaya', sans-serif;
+    margin-top: 15%;
 }
 
 .example_g {
@@ -418,6 +419,6 @@ ul, #pagepiling {
     display: grid!important;
    }
    .example_g{
-    display: contents!important;
+    margin: 40% 35% auto;
    }
 } 
