@@ -6,107 +6,87 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Whiskey Group</title>
       <meta name="Resource-type" content="Document" />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
       <link rel="stylesheet" type="text/css" href="CSS/jquery.pagepiling.css" />
       <link rel="stylesheet" type="text/css" href="CSS/main.css" />
       <link rel="stylesheet" type="text/css" href="CSS/dc.min.css" />
-      <style>
-         /* Style for our header texts
-         * --------------------------------------- */
-         h1{
-         font-size: 5em;
-         font-family: arial,helvetica;
-         color: #fff;
-         margin:0;
-         padding:0;
-         }
-         /* Centered texts in each section
-         * --------------------------------------- */
-         .section{
-         text-align:center;
-         }
-         /* Backgrounds will cover all the section
-         * --------------------------------------- */
-         #section1,
-         #section2,
-         #section3{
-         background-size: cover;
-         }
-         /* Defining each section background and styles
-         * --------------------------------------- */
-         #section1{
-         background-image: url(https://liquorbankmobile.com/wp-content/uploads/2020/07/h1-video-button-img-1.jpg);
-         }
-         #section2{
-         background-image: url(imgs/bg2.jpg);
-         padding: 6% 0 0 0;
-         }
-         #section3{
-         background-image: url(imgs/bg3.jpg);
-         padding: 6% 0 0 0;
-         }
-         #section3 h1{
-         color: #000;
-         }
-         #section1 h1{
-         position: absolute;
-         left: 0;
-         right: 0;
-         margin: 0 auto;
-         top: 30px;
-         color: #fff;
-         }
-         #section2 .intro{
-         position: absolute;
-         left: 0;
-         right: 0;
-         margin: 0 auto;
-         top: 30px;
-         }
-         #section2 h1,
-         #section2 p{
-         text-shadow: 1px 5px 20px #000;
-         }
-         #section3 h1,
-         #section3 p{
-         text-shadow: 1px 5px 20px #000;
-         color: #fff;
-         }
-         #infoMenu li a{
-         color: #fff;
-         }
-      </style>
    </head>
    <body>
-     
-	<ul id="menu">
-		<li data-menuanchor="page1" class="active"><a href="#page1">Home</a></li>
-		<li data-menuanchor="page2"><a href="#page2">About</a></li>
-		<li data-menuanchor="page3"><a href="#page3">Charts</a></li>
-		<li data-menuanchor="page4"><a href="#page3">Whiskey's</a></li>
-	</ul>
-	<div id="pagepiling">
-	    <div class="section" id="section1">
+      <nav class="navbar navbar-default navbar-fixed-top">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+               <ul class="nav navbar-nav">
+                  <li class="dropdown">
+                           <li data-menuanchor="welcome_section"><a href="#welcome_section">Home</a></li>
+                           <li data-menuanchor="introduction_section"><a href="#introduction_section">About</a></li>
+                           <li data-menuanchor="piecharts_section"><a href="#piecharts_section">Charts</a></li>
+                           <li data-menuanchor="barchart_section"><a href="#barchart_section">Whiskey's</a></li>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+	<div id="pagepiling"> 
+	    <div class="section" id="welcome_section">
          <div class="overlayp1"></div>
 	    	<h1 class="p1">Whiskey Group</h1>
-        <a href="#page2" class="example_g" type="button">Lat's Go</a>
-
-	    </div>
+        <a href="#introduction_section" class="example_g" type="button">Lat's Go</a>
+     </div>
 	    <div class="section" id="section2">
-	    	<div class="intro">
-	    		<h1>Backgrounds </h1>
-	    		<p>Show it in full screen!</p>
-	    	</div>
+         <div class="overlay2"></div>
+	    		<!-- introduction -->
+            <!-- Snippets about whiskys, alternating every 9 seconds -->
+            <div class="col mb-3 text-center">
+               <div class="alert bg-warning" id="whisky_quotes">
+               <p class="p2"> Please Note! </p>
+               </div>
+               <h2 class="pag2">
+                  This site displays some data and information about whiskey from different countries of the world. These percentages of whiskey are not very accurate according to the indicators. This site is due to the presence of huge quantities of whiskey types around the world. We have chosen for you a bouquet of whiskey types to display with pictures and information about them.
+               </h2>
+                 <h3 class="pag2h3"> Enjoy browsing </h3>
+            </div>
 	    </div>
 	    <div class="section" id="section3">
-	    	<div class="intro">
-	    		<h1>Just terrific!</h1>
-	    		<p>Use the power of images</p>
-	    	</div>
+               <!-- piecharts -->
+         <div class="container align-center only-big-screens">
+             <div class="container-fluid pt-5">
+                 <div class="row justify-content-center">
+                  <div class="overlay4"></div>
+                     <!-- Pie chart -->
+                     <div class="col-lg-4 my-3">
+                         <h4 class="mb-4 title-chart">Categories</h4>
+                         <div id="piechart1" class="svg-container ">
+                         </div>
+                     </div>
+                     <!-- -->
+                     <div class="col-lg-4 my-3">
+                         <h4 class="mb-4 title-chart">Countries</h4>
+                         <div id="piechart2" class="svg-container ">
+                         </div>
+                     </div>
+                     <!-- Pie chart relevant to the whisky's -->
+                     <div class="col-lg-4 my-3">
+                         <h4 class="mb-4 title-chart">Types</h4>
+                         <div id="piechart3" class="svg-container ">
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
 	    </div>
 	 <!-- barchart -->
 	 <div class="section" id="section4" data-anchor="barchart_section">
-		<div class="container align-center only-big-screens ">
+		<div class="container align-center only-big-screens only-small-screens ">
 			<div class="row">
+            <div class="overlay4"></div>
 				<div class="col-lg-12 my-3">
 					<h4 class="mb-4">Percentages by manufacturing countries</h4>
 					<div id="barchart" class="my-3 svg-container"></div>
@@ -126,22 +106,5 @@
       <!-- Custom JS -->
       <script src="js/main.js"></script>
       <script src="js/animation.js"></script>
-      <script>
-         var deleteLog = false;
-         
-         $(document).ready(function() {
-            $('#pagepiling').pagepiling({
-                menu: '#menu',
-                anchors: ['page1', 'page2', 'page3'],
-                navigation: {
-                    'textColor': '#f2f2f2',
-                    'bulletsColor': '#ccc',
-                    'position': 'right',
-                    'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4']
-                }
-            });
-         });
-         
-      </script>
    </body>
 </html>

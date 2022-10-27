@@ -1,29 +1,3 @@
-// Get the modal
-var modal = document.getElementById("disclaimerModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("disclaimer");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-};
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-};
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
-
 // Whisky Quotes
 var whisky_quote = [];
 whisky_quote[0] =
@@ -85,7 +59,7 @@ $(document).ready(function() {
     direction: "horizontal",
     verticalCentered: true,
     sectionsColor: [ '#3b1817', '#3b1817','#3b1817' ,'#3b1817','#3b1817','#3b1817'],
-    anchors: ["welcome_section", "introduction_section", "piecharts_section", "barchart_section", "datatable_section","thank_you_section"],
+    anchors: ["welcome_section", "introduction_section", "piecharts_section", "barchart_section"],
     scrollingSpeed: 700,
     easing: "swing",
     loopBottom: false,

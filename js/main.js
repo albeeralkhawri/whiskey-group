@@ -49,20 +49,20 @@ var datacount = dc.dataCount("#count_field");
 // End Charts Name
   
 // Charts Details
+
 function show_barchart(ndx) {
   var dim = ndx.dimension(function(d) {
     return d["Country"];
   });
 
   var group = dim.group();
-  
   barChart
     .width(550)
     .height(450)
       .title(function(d) {
         return d.key;
       })
-
+    
     .dimension(dim)
     .group(group)
     .on("filtered", chartCallback)
@@ -79,16 +79,23 @@ function show_barchart(ndx) {
     .renderHorizontalGridLines(true)
     .renderLabel(true)
     .y(d3.scaleLinear().domain([0 ,100]))
-    .yAxisLabel("Number Of Whisky",20)
+    .yAxisLabel("Number Of Whisky",50)
     .title(function(d) {
       return d.key;
     })
     .transitionDuration(1500)
+    .renderLabel(true)
     .colors(d3.scaleOrdinal([
-      "green",
-      "red",
-      "orange",
-      "red"
+      "#fff",
+      "#000",
+      "#fff",
+      "#000",
+      "#fff",
+      "#000",
+      "#fff",
+      "#000",
+      "#fff",
+      "#000",
   ])
   )
 }
@@ -167,12 +174,12 @@ function show_piechart1(ndx) {
     .renderLabel(true)
     .colors(
       d3.scaleOrdinal([
-        "#FF7201",
-        "#FF8B2D",
-        "#FD9C4D",
-        "#FFAD6B",
-        "#FFC08D",
-        "#FFD7B6"
+        "#2d95ec",
+        "#f6ba2a",
+        "#f64d2a",
+        "#8abb21",
+        "#e2711d",
+        "#5c415d"
       ])
     )
     .title(function(d) {
@@ -209,12 +216,12 @@ function show_piechart2(ndx) {
     .renderLabel(true)
     .colors(
      d3.scaleOrdinal([
-        "#FF0101",
-        "#FF2828",
-        "#FF4A4A",
-        "#FF6868",
-        "#FF9090",
-        "#FFB5B5"
+        "#2d95ec",
+        "#f6ba2a",
+        "#f64d2a",
+        "#8abb21",
+        "#e2711d",
+        "#5c415d"
       ])
     )
     .title(function(d) {
@@ -251,12 +258,12 @@ function show_piechart3(ndx) {
     .renderLabel(true)
     .colors(
       d3.scaleOrdinal([
-        "#0F7E00",
-        "#27861B",
-        "#4A9540",
-        "#6DA865",
-        "#88B781",
-        "#ACCDA7"
+          "#2d95ec",
+          "#f6ba2a",
+          "#f64d2a",
+          "#8abb21",
+          "#e2711d",
+          "#5c415d"
       ])
     )
     .title(function(d) {
@@ -280,7 +287,7 @@ function show_piechart3(ndx) {
 
 // End Charts Details
  
-// Filters
+// Filters fix we have no filters yat
 
 function search_bar(ndx) {
   var dim = ndx.dimension(function(d) {
@@ -364,3 +371,24 @@ function reset() {
 function chartCallback() {
   reset();
 }
+
+
+
+// Whisky Quotes
+var whisky_quote = [];
+whisky_quote[0] = "Please click on the charts below to discover more different whiskey types you can discover in total";
+whisky_quote[1] = "You can navigate with your mouse, the arrows on your keyboard or a touchscreen"
+var cq = 0;
+
+var whisky_q = document.getElementById("whisky_quotes");
+setInterval(function() {
+  $("#whisky_quotes").fadeOut("slow", function() {
+    whisky_q.innerHTML = whisky_quote[cq];
+    cq++;
+    if (cq == whisky_quote.length) {
+      cq = 0;
+    }
+    $("#whisky_quotes").fadeIn("slow");
+  });
+}, 9999);
+
