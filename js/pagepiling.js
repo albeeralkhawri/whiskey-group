@@ -1,3 +1,23 @@
+// Whisky Quotes
+var whisky_quote = [];
+whisky_quote[0] = "Please click on the charts below to discover more different whiskey types you can discover in total";
+whisky_quote[1] = "You can navigate with your mouse, the arrows on your keyboard or a touchscreen"
+var cq = 0;
+
+var whisky_q = document.getElementById("whisky_quotes");
+setInterval(function() {
+  $("#whisky_quotes").fadeOut("slow", function() {
+    whisky_q.innerHTML = whisky_quote[cq];
+    cq++;
+    if (cq == whisky_quote.length) {
+      cq = 0;
+    }
+    $("#whisky_quotes").fadeIn("slow");
+  });
+}, 9999);
+
+
+
 (function ($, document, window, undefined) {
     'use strict';
 

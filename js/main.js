@@ -86,16 +86,7 @@ function show_barchart(ndx) {
     .transitionDuration(1500)
     .renderLabel(true)
     .colors(d3.scaleOrdinal([
-      "#fff",
-      "#000",
-      "#fff",
-      "#000",
-      "#fff",
-      "#000",
-      "#fff",
-      "#000",
-      "#fff",
-      "#000",
+      "#fff"
   ])
   )
 }
@@ -128,17 +119,11 @@ function show_datatable(ndx) {
         }
       },
       {
-        label: "Country",
-        format: function(d) {
-          return d["country"];
-        }
-      },
-      {
         label: "Did you know?",
         format: function(d) {
           return (
             d["fun_fact"] +
-            '<div class="py-4"> <button class="btn btn-warning btn-sm my-4"><a style="color:white" target="_blank" href="https://www.google.com/search?q=" ' +
+            '<div class="py-4"> <button class="btn btn-warning btn-sm my-4"><a style="color:white" target="_blank" href="https://www.google.com/search?q= ' +
             d["Name"] +
             '"> Learn more</a> </button></div>'
           );
@@ -335,7 +320,7 @@ function count(ndx) {
 //Pagination
 
 var ofs = 0,
-  pag = 5;
+  pag = 3;
 
 function display() {
   d3.select("#begin").text(ofs + 1);
@@ -371,24 +356,3 @@ function reset() {
 function chartCallback() {
   reset();
 }
-
-
-
-// Whisky Quotes
-var whisky_quote = [];
-whisky_quote[0] = "Please click on the charts below to discover more different whiskey types you can discover in total";
-whisky_quote[1] = "You can navigate with your mouse, the arrows on your keyboard or a touchscreen"
-var cq = 0;
-
-var whisky_q = document.getElementById("whisky_quotes");
-setInterval(function() {
-  $("#whisky_quotes").fadeOut("slow", function() {
-    whisky_q.innerHTML = whisky_quote[cq];
-    cq++;
-    if (cq == whisky_quote.length) {
-      cq = 0;
-    }
-    $("#whisky_quotes").fadeIn("slow");
-  });
-}, 9999);
-

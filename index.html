@@ -27,11 +27,11 @@
                   <li class="dropdown">
                            <li data-menuanchor="welcome_section"><a href="#welcome_section">Home</a></li>
                            <li data-menuanchor="introduction_section"><a href="#introduction_section">About</a></li>
-                           <li data-menuanchor="piecharts_section"><a href="#piecharts_section">Charts</a></li>
-                           <li data-menuanchor="barchart_section"><a href="#barchart_section">Whiskey's</a></li>
+                           <li data-menuanchor="piecharts_section"><a href="#piecharts_section">Pie charts</a></li>
+                           <li data-menuanchor="barchart_section"><a href="#barchart_section">Bar chart</a></li>
+                           <li data-menuanchor="datatable_section"><a href="#datatable_section">Data Table</a></li>
                   </li>
                </ul>
-            </div>
          </div>
       </nav>
 	<div id="pagepiling"> 
@@ -94,6 +94,40 @@
 			</div>
 		</div>
 	</div>
+       <!-- datatable -->
+        <div class="section pp-scrollable" id="Fifth" data-anchor="datatable_section">
+            <div class="container pt-5">
+                <div class="row pt-5">
+                    <!-- Filtered elements count -->
+                    <div class="overlay4"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                <form class="mx-4 my-2 btn btn-light" onkeyup="noDataMatch()" id="search"><input placeholder="Search by whiskey"></input></form>
+                    <button type="button" class="btn btn-info" id="resetBtn">
+                        <span onclick="javascript:dc.filterAll(); dc.renderAll();">Reset All Filters</span>
+                    </button>
+                    <table id="datatable">
+                    </table>
+                    <div id="no_data_found"></div>
+                    <div class="col">
+                        <!-- Pagination -->
+                        <p class="ml-3">
+                            <span>Datatable displaying records </span>
+                            <span id="begin"></span> -
+                            <span id="end"></span>
+                            <input id="previous" class="btn btn-warning btn-sm ml-3" type="Button" value="Previous" onclick="javascript:last()" />
+                            <input id="next" class="btn  btn-outline-warning btn-sm" type="button" value="Next" onclick="javascript:next()" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+</div>
+  </div>
 </div>
       <script src="js/jquery.min.js"></script>
       <script src="js/bootstrap.min.js"></script>

@@ -11,7 +11,7 @@
 }
 
 #welcome_section{
-    background-image: url(https://liquorbankmobile.com/wp-content/uploads/2020/07/h1-video-button-img-1.jpg);
+    background-image: url(../image/background/1.jpg);
     padding: 6% 0 0 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,7 +116,7 @@ a {text-decoration: none!important;}
 }
 
 #section2{
-    background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f0/de/58/whisgars-cigar-whisky.jpg?w=1200&h=-1&s=1);
+    background-image: url(../image/background/2.jpg);
     padding: 6% 0 0 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -214,7 +214,7 @@ abbr,acronym { border: 0;
 }
 
 #section3{
-    background-image: url(https://mscwordpresscontent.s3.amazonaws.com/wa/wp-content/uploads/2021/08/WA_hiddenTreasures_1600x900_D-1240x696.jpg);
+    background-image: url(../image/background/3.jpg);
     padding: 6% 0 0 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -241,7 +241,7 @@ abbr,acronym { border: 0;
 }
 
 #section4{
-    background-image: url(https://i.pinimg.com/originals/24/8b/30/248b30abe779c2afce97c89a5d8b45fd.jpg);
+    background-image: url(../image/background/4.jpg);
     padding: 6% 0 0 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -373,6 +373,11 @@ h1{
 	top: 9px;
 	width: 90px;
 }
+@media (max-width: 765px){
+    #navbar{
+        background-color: #0000006e!important
+    }
+}
 @media (min-width: 1024px) {
 	.only-small-screens {
 	  display: block;
@@ -381,8 +386,8 @@ h1{
 	  overflow: hidden;
       max-width: 7;
       font-family: 'Coiny', cursive!important;
+      
 	}
-  
 ul, #pagepiling {
 	  display: inherit!important;
 	}
@@ -422,3 +427,102 @@ ul, #pagepiling {
     margin: 40% 35% auto;
    }
 } 
+
+/*Page 5*/
+
+/* Data Table*/
+
+table{
+    border: solid 5px #bebcba;
+}
+
+
+tbody{
+    border: solid 3px #bebcba;
+}
+
+
+#Fifth{
+    background-image: url(../image/background/WhiskyHeader.webp);
+    padding: 6% 0 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row{
+    z-index: 2;
+}
+
+.btn-warning{
+    background-color: indianred!important;
+    color: #fff!important;
+    border: none!important;
+    outline: none!important;;
+    border-inline: none!important;;
+}
+
+.btn-warning:hover{
+     background-color: #ff0000!important;
+     border: none!important;
+}
+.btn-warning:onclick{
+    border: none!important;
+    
+}
+.btn-warning{
+    color: #000!important;
+    border-inline: none!important;
+    border: none!important;
+    outline: none!important;
+    font-weight: bolder;
+}
+
+.btn-warning:hover{
+    background-color: #ff0000!important;
+}
+
+.dc-table-head{
+    text-align: center!important
+}
+
+.dc-table-column _2{
+    max-width: 50%;
+}
+
+input.dc-text-filter-input{
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius:20px;
+  border: none!important;
+  outline: none!important;
+  color:#000;
+  margin-bottom: 2%;
+}
+
+ .btn-info,#resetBtn{
+    background-color: indianred;
+    border-inline: none!important;
+    border: none!important;
+    outline: none!important;
+    font-weight: bolder;
+    
+}
+
+.btn-info:hover{
+    background-color: #d316169c;
+}
+
+#next{
+    color: #000;
+    border-inline: none!important;
+    border: none!important;
+    outline: none!important;
+    font-weight: bolder;
+}
+
+#next:hover{
+    background-color: indianred;
+}
+#resetBtn:hover{
+    background-color: #ff0000!important;
+}
