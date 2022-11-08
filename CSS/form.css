@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Cabin+Sketch:wght@400;700&family=Coiny&family=Creepster&family=Galada&family=Henny+Penny&family=Pattaya&family=Waiting+for+the+Sunrise&display=swap');
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: indianred; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b60e0c; 
+  }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Coiny', cursive!important;
+  overflow-x: hidden !important;
+  max-width: 100%!important;
+}
+
+a {
+  color: #F28705;
+  text-decoration: none;
+  outline: 0 !important;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+a:hover, a:focus {
+  color: #F28705;
+  text-decoration: underline;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+:focus {
+  outline: 0 !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.box .input-group .form-control {
+  height: 50px;
+  font-size: 18px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 3px solid #FFFFFF;
+  border-radius: 95px;
+}
+
+.box .submit-btn {
+  display: inline-block;
+  background-color: #457324;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  border: 0;
+  border-radius: 0px 0px 10px 10px;
+  padding: 14px 20px;
+  width: 305px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+/*Textarea*/
+
+.textarea{
+    height: auto!important;
+}
+
+.contact-form {
+  background: #242323bd;
+  padding: 33px 36px 52px;
+  border-radius: 40px;
+  max-width: 35%;
+  margin: 12% auto 10%!important;
+  box-shadow: 0px 0px 12px rgb(205 92 92 / 39%);
+  position: relative;
+  text-align: center;
+  z-index: 99;
+}
+.contact-form .contact-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-form h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: indianred;
+  max-width: 180px;
+  margin: 0 auto 24px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form .form-control {
+  background: #fff;
+  border-radius: 12px;
+  height: 40px;
+  line-height: 1;
+  color: #000;
+  padding: 10px 20px;
+  border: 1px solid #BCBCBC;
+}
+
+.contact-form form .form-control:focus {
+  box-shadow: none;
+}
+
+.contact-form .submit-btn {
+  border: 1px solid indianred;
+  border-radius: 40px;
+  padding: 12px 15px 10px;
+  width: 100%;
+  background: indianred;
+  font-weight: 900;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  transition: all .1s linear;
+  animation-name: boinkyOne;
+  animation-duration: 4s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contact-form .formEl .country_flag {
+  left: 7px;
+  position: absolute;
+  top: 13px;
+}
+
+.contact-form .formEl .phoneFP {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.contact-form .formEl .phoneFP #phoneprefix {
+  border-bottom-right-radius: 0;
+  border-right: 0;
+  border-top-right-radius: 0;
+  max-width: 105px;
+  padding-left: 30px;
+}
+.contact-form .formEl .phoneFP #phonenumber {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.contact-form .disclaimer {
+  font-size: 14px;
+  font-weight: 300;
+  color: #777;
+  display: block;
+  width: 235px;
+  margin: 15px auto 0;
+  text-align: justify;
+}
+
+form .form-group .fa {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  font-size: 15px;
+}
+
+.posRel {
+  position:relative
+}
+@media (max-width: 991px) {
+
+  .contact-form {
+    margin-top: 24px;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 600px;
+  }
+  .contact-form::after {
+    display: none;
+  }
+  .contact-form .disclaimer {
+    width: 330px;
+  }
+
+  .intro-section {
+    padding: 40px 0;
+  }
+  .box {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .box h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  .box .submit-btn {
+    font-size: 20px;
+    padding: 8px 10px 11px;
+    width: unset;
+    max-width: 300px;
+    min-width: 105px;
+  }
+}
+
+@media (max-width: 575px) {
+
+  .contact-form {
+    margin-top: 20%!important;
+    width: auto;
+    max-width: 600px;
+  }
+  .contact-form::after {
+    display: none;
+  }
+  .contact-form .disclaimer {
+    width: 242px;
+  }
+}
+
+.example_g{
+    max-width: 40%;
+}
+.example_g:hover{
+    background-color: #b60e0c;
+}
+
+.example_g:hover {
+    transform: scale(1.30);
+}
+
+
+
+.overlay5 {
+    background: black;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: .60;
+   
+}
+
+body{
+    background-image: url(../image/background/Drinking-Scotch-for-the-first-time....webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; 
+    }
+
+
+/*For nav form*/
+.container-fluid{
+  font-size: 20px;
+}
+#pp-nav.custom .pp-tooltip{
+	color: #AAA!important;
+}
+#pp-nav{
+    margin: 0px 96% auto!important;
+    display: block!important;
+    color: #fff!important;
+}
+.dropdown-menu>li>a,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #fafafa;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.dropdown-menu>li>a:hover {
+    color: #262626;
+    text-decoration: none;
+    background-color: #ffbe7a;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: #fafafa;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #f2f2f2;
+}
+.navbar-nav>li>a:hover{
+	background-color: rgba(255, 255, 255, 0.678)!important;
+}
+
+#pp-nav li .active span{
+	background-color: rgba(255, 255, 255, 0.678)!important;
+    border-color:#fff!important;
+}
+
+#pp-nav li a span{
+    border-color:#fff!important;
+}
+.navbar-nav>li>a:focus, .navbar-default{
+	background-color: rgba(255, 255, 255, 0.678)!important;
+}
+.navbar-default{
+	background-color: rgb(255 255 255 / 8%)!important;
+    border-color: rgb(255 255 255 / 0%)!important;
+}
+
+.navbar-default ,.navbar-nav > li > a{
+    font-family: 'Coiny', cursive!important;
+}
+
+@media (max-width: 765px){
+    #navbar{
+        background-color: #0000006e!important
+    }
+}

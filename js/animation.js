@@ -58,8 +58,8 @@ $(document).ready(function() {
     menu: null,
     direction: "horizontal",
     verticalCentered: true,
-    sectionsColor: [ '#3b1817', '#3b1817','#3b1817' ,'#3b1817','#3b1817','#3b1817','#3b1817'],
-    anchors: ["welcome_section", "introduction_section", "piecharts_section", "barchart_section", "datatable_section"],
+    sectionsColor: [ '#3b1817', '#3b1817','#3b1817' ,'#3b1817','#3b1817','#3b1817','#3b1817','#3b1817'],
+    anchors: ["welcome_section", "introduction_section", "piecharts_section", "barchart_section", "datatable_section", "form.html"],
     scrollingSpeed: 700,
     easing: "swing",
     loopBottom: false,
@@ -89,7 +89,7 @@ window.addEventListener('resize', checkSize);
 function checkSize(){if(document.documentElement.clientWidth < 991) {
   $('#introduction_section').addClass('pp-scrollable');
   $('#piecharts_section').addClass('pp-scrollable');
-  $('#thank_you_section').addClass('pp-scrollable');
+  $('#datatable_section').addClass('pp-scrollable');
   $('#btn-sm-view').addClass('mb-3');
 }
 }
