@@ -579,3 +579,84 @@ input.dc-text-filter-input{
 }
 
 
+/*For thanks page*/
+#top{
+    background-image: url(../image/background/210928_Proper12_Miami_3423.webp);
+    padding: 6% 0 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.git{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 2rem;
+    animation: blinkingText 1s infinite;
+    font-size: 21px;
+    font-family: 'Coiny', cursive;
+}
+@keyframes blinkingText{
+    25%		{ color: #2cdd35;}
+    50%		{ color: #d1db3e;}
+    100%		{ color: #f80101;}
+}
+
+
+.link{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 2rem;
+    animation: blinkingText 1s infinite;
+    font-size: 21px;
+    font-family: 'Coiny', cursive;
+}
+@keyframes blinkingText{
+    50%		{ color: #f80101;}
+    25%		{ color: #d1db3e;}
+    100%		{ color: #2cdd35;}
+}
+#ghcard-albeeralkhawri-1{
+    margin-bottom: 5%;
+}
+.pro{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 2;
+}
+
+.th,.thanksTitle,.thanksSub,.me{
+    font-family: 'Coiny', cursive;
+    font-size: auto;
+}
+
+
+.overlay7 {
+    background: black;
+    height: 200vh;
+    width: 200vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: .60;
+   
+}
+
+
+@media (max-width: 1300px){
+    #top{
+        background-image: url(../image/background/210928_Proper12_Miami_3423.webp);
+        /* padding: 6% 0 0 0; */
+        background-repeat: no-repeat;
+         background-size: auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
