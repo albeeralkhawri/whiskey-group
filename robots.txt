@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://albeeralkhawri.github.io/whiskey-group/sitemap.xml
